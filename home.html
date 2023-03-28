@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teemperature converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+    <div class="head">
+        <h1 class="temp">Temperature converter</h1>
+        </div>
+        <div class="conv">
+            <form id="heloo" onsubmit="temperatureconverter(); return false">
+                <label for="input">converter &#176;C to &#176;F</label>
+                AND
+                <br>
+                <label for="input"> &#176;F to &#176;C</label>
+                
+            <input type="number" name="input" id="cels" class="inp" value="0">
+            <select name="select" id="select" class="inp">
+                <option value="choose" disable selected hidden >choose</option>
+                <option value="cel">&#176;celsius</option>
+                <option value="fer">&#176;fahrenheit</option>
+            </select>
+            <br>
+            <button type="submit" name="cels" class="inp" id="btn">Convert</button>
+            <br>
+            <span id="result"></span>
+            </form> 
+        </div>
+    </div>
+        <script src="script.js"></script>
+        <footer class="foo">
+            <h3>Made by Jeba Ansari </h3>               
+        </footer>
+</div>
+
+</body>
+</html>
